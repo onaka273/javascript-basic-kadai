@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>課題4：カウントアップ</title>
+</head>
+<body>
+  <p>カウント：<span id="counter">0</span></p>
+  <button id="countBtn">カウント</button>
+  <button id="resetBtn">リセット</button>
+
+  <script>
+    let count = 0 ;
+    const counter = document.getElementById('counter');
+    const countBtn = document.getElementById('countBtn');
+    const resetBtn = document.getElementById('resetBtn');
+
+    const updateCounter = () => {
+    counter.textContent = count;
+    };
+
+    countBtn.addEventListener('click', () => {
+     count ++ ;
+     updateCounter();
+    });
+
+    resetBtn.addEventListener('click', () => {
+     count = 0 ;
+     updateCounter();
+    });
+
+  </script>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>課題2：名前を表示</title>
+</head>
+<body>
+  <input type="text" id="nameInput" placeholder="名前を入力してください" />
+  <button id="showBtn">表示</button>
+  <p id="greeting"></p>
+
+  <script>
+    showBtn.addEventListener('click', () => {
+    const msg = document.getElementById('nameInput') ;
+    const name = msg.value;
+    console.log(name);
+
+    const greeting = document.getElementById('greeting');
+    greeting.textContent = `こんにちは、${name}さん！`; 
+    });
+  </script>
+</body>
+</html>

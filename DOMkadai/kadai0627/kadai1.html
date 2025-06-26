@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>DOM操作課題1</title>
+</head>
+<body>
+  <p id="message">ここにメッセージが表示されます</p>
+  <button id="btn">クリックしてね</button>
+
+  <script>
+    const btn = document.getElementById('btn');
+
+    btn.addEventListener('click', () => {
+     const message = document.getElementById('message');
+    message.textContent = 'こんにちは！';
+    });
+
+  </script>
+</body>
+</html>

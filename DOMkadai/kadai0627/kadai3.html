@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>課題3：リスト追加</title>
+</head>
+<body>
+  <button id="addItemBtn">リストに追加</button>
+  <ul id="myList">
+    <li>最初の項目</li>
+  </ul>
+
+  <script>
+    const addItemBtn = document.getElementById('addItemBtn');
+    const myList = document.getElementById('myList');
+    let num = 0;
+
+    addItemBtn.addEventListener('click', () => {
+    const appendChild = document.createElement('li');
+    num ++ ;
+    appendChild.textContent = `追加された項目 ${num}`;
+    myList.appendChild(appendChild);
+    });
+  </script>
+</body>
+</html>
